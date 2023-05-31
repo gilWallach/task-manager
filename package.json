@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server",
-    "build": "webpack --config webpack.config.prod.js"
+    "build": "webpack --config webpack.config.prod.js",
+    "deploy": "gh-pages -d dist"
   },
   "license": "ISC",
   "devDependencies": {
@@ -18,9 +19,7 @@
     "typescript": "^5.0.4",
     "webpack": "^5.84.1",
     "webpack-cli": "^5.1.1",
-    "webpack-dev-server": "^4.15.0"
-  },
-  "dependencies": {
-
+    "webpack-dev-server": "^4.15.0",
+    "gh-pages": "^1.2.0"
   }
 }
