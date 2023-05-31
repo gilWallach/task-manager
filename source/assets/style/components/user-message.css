@@ -1,0 +1,18 @@
+#user-message-wraper{
+    position: fixed;
+    bottom: -20rem;
+    left: -20rem;
+    background-color: var(--clr6);
+    width: fit-content;
+    min-height: 2rem;
+    padding: 1rem;
+    transition: transform 1s ease-in-out;
+}
+
+#user-message-wraper.open{
+    transform: translate(20rem, -20rem) ;
+}
+
+#user-message-wraper h4{
+    color: var(--clr1);
+}

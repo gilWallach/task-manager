@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Task Manager</title>
+    <!-- <link rel="stylesheet" href="main.css" /> -->
+    <script type="module" src="/dist/bundle.js"></script>
+  </head>
+  <body>
+    <template id="task-input">
+      <form class="task-form content flex space-between">
+        <div class="flex column space-between">
+          <label for="title">Title</label>
+          <input type="text" id="title" />
+        </div>
+        <div class="flex column space-between">
+          <label for="description">Description</label>
+          <textarea id="description" rows="1"></textarea>
+        </div>
+        <div class="flex column space-between">
+          <label for="priority">priority</label>
+          <input type="number" id="priority" step="1" min="0" max="5" />
+        </div>
+        <button type="submit">ADD TASK</button>
+      </form>
+    </template>
+
+    <template id="single-task">
+      <li draggable="true">
+        <div class="flex space-between margin-bot">
+          <h3></h3>
+          <h5></h5>
+        </div>
+        <div class="flex space-between align-center margin-bot">
+          <h4></h4>
+          <button id="delete-btn" class="delete-btn">Delete</button>
+        </div>
+        <p></p>
+      </li>
+    </template>
+
+    <template id="task-list">
+      <div class="tasks content full">
+        <header class="space-between list-layout">
+          <div class="flex align-center space-between">
+            <h2></h2>
+            <select name="sortby" id="sortby">
+              <option value="">Sort By</option>
+              <option value="time">Time Added</option>
+              <option value="priority">Priority</option>
+            </select>
+          </div>
+        </header>
+
+        <ul class="clean-list"></ul>
+      </div>
+    </template>
+
+    <template id="user-message">
+      <div id="user-message-wraper">
+        <h4 id="message"></h4>
+      </div>
+    </template>
+    <div id="app" class="main-layout">
+      <div class="headder full">
+        <div class="main-layout">
+          <div class="content flex space-between">
+            <h1 class="content">Task Manager</h1>
+            <img
+              class="content"
+              src="./source//assets/icons/check-square.svg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <main class="content flex column justify-center">
+        <div id="task-form-wraper"></div>
+        <section id="lists-wraper" class="flex column"></section>
+      </main>
+      <!-- Icon by <a class="link_pro" href="https://freeicons.io/essentials-free-ui-icons-3/check-icon-12376">Raj Dev</a>
+                on <a href="https://freeicons.io">freeicons.io</a> -->
+    </div>
+  </body>
+</html>

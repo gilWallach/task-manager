@@ -1,0 +1,11 @@
+@import "./assets/style/basics/base.css";
+@import "./assets/style/basics/helpers.css";
+@import "./assets/style/basics/layout.css";
+
+@import "./assets/style/setup/variables.css";
+
+@import "./assets/style/components/task-list.css";
+@import "./assets/style/components/task-form.css";
+@import "./assets/style/components/task-item.css";
+@import "./assets/style/components/headder.css";
+@import "./assets/style/components/user-message.css";

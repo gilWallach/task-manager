@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'lato', sans-serif;
+  line-height: 1.25;
+  color: var(--clr-3);
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--clr2);
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  font-family: lato-bold, sans-serif;
+  margin: 0;
+  color: var(--clr4);
+  text-transform: uppercase;
+  line-height: normal;
+}
+
+h2 {
+  font-size: 1.75em;
+  margin: 1rem 0;
+}
+
+p {
+  margin: 0;
+}
+
+button,
+.btn {
+    margin: 0;
+    font-family: lato-bold, sans-serif;
+    font-size: 1rem;
+    line-height: normal;
+    padding: 0.55em 1.3em;
+    border: 2px solid var(--clr3);
+    color: var(--clr3);
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color .3s, color .3s;
+}
+
+button:hover {
+    color: var(--clr1);
+    background-color: var(--clr6);
+    border-color: var(--clr1);
+}
+
+.delete-btn:hover {
+    color: var(--clr4);
+    border-color: var(--clr4);
+    background-color: transparent;
+}
+
+input,
+textarea {
+  font: inherit;
+  padding: 0.2rem 0.4rem;
+  width: 100%;
+  max-width: 30rem;
+  border: 1px solid var(--clr3);
+  background-color: var(--clr2);
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  background-color: var(--clr1);
+}
+
+.margin-bot{
+  margin-bottom: 0.5rem;
+}

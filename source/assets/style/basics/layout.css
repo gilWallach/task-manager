@@ -1,0 +1,25 @@
+.main-layout:not(.full) {
+  display: grid;
+  grid-template-columns: 1fr 6fr 1fr;
+}
+
+.full{
+  grid-column: 1 /-1;
+}
+
+.main-layout .content{
+  grid-column: 2;
+}
+
+.list-layout:not(.full){
+  display: grid;
+  grid-template-columns: 1rem auto 1rem;
+}
+
+.list-layout > *{
+  grid-column: 2;
+}
+
+#app main {
+  margin-block-start: 2rem;
+}

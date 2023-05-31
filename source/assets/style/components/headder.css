@@ -1,0 +1,9 @@
+.headder {
+  background-color: var(--clr5);
+  box-shadow: 7px -6px 9px 0px var(--clr5);
+}
+
+.headder h1 {
+  padding: 1.5rem 0;
+  color: var(--clr6);
+}
